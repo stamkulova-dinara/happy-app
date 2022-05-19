@@ -124,7 +124,7 @@ body {
     font-size: 32px;
     line-height: 36px;
     width: 495px;
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .subtitle {
@@ -293,11 +293,6 @@ body {
     color:#FFFFFF;
     padding: 100px 420px 160px 420px;
     font-weight: 400;
-}
-
-#light-mode {
-    background-color:#FFFFFF;
-    color:#222222;
 }
 
 .block-darkmode__wrap {
