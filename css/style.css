@@ -295,6 +295,11 @@ body {
     font-weight: 400;
 }
 
+#light-mode {
+    background-color:#FFFFFF;
+    color:#222222;
+}
+
 .block-darkmode__wrap {
     width: 100%;
     align-items: center;
