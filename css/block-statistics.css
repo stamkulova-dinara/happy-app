@@ -1,0 +1,28 @@
+.block-statistics {
+    background-color: #FF5437;
+    padding: 7% 14%;
+    color:#FFFFFF;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-statistics__number {
+    font-size: 96px;
+    line-height: 96px;
+    margin: 0;
+}
+
+.block-statistics__desc {
+    padding-left: 10px;
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 996px){
+    .block-statistics__card {
+        margin-bottom: 20px;
+    }
+}

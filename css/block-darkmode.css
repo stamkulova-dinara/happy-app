@@ -1,0 +1,55 @@
+.block-darkmode {
+    background-color:#222222;
+    position: relative;
+    color:#FFFFFF;
+    /* padding: 100px 420px 160px 420px; */
+    padding: 8% 28% 14% 28%;
+    font-weight: 400;
+}
+
+.block-darkmode__wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.block-darkmode__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+}
+
+#yell {
+    color:#FF9209;
+}
+
+.block-darkmode__desc {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 12px 0 36px 0;
+}
+
+.block-darkmode__wrap-image {
+    width: 400px;
+    margin: 0;
+}
+
+.block-darkmode__wrap-line {
+    width: 100%;
+    margin: 0;
+    border-top: 2px solid #E5E5E5;
+    padding-top: 41px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.block-darkmode__wrap-btn {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-left: 25%;
+}
+
+.block-darkmode__btn-text {
+    margin: 0;
+}

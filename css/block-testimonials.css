@@ -1,0 +1,25 @@
+.block-testimonials {
+    background-color: #F2F2F2;
+    padding: 8%;
+}
+
+.card {
+    width: 375px;
+    height: 224px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.card__testimonial {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 30px 22px 30px;
+    margin: 0;
+    height: 96px;
+}
+
+.card__testimonial-author, .card__testimonial-workplace{
+    margin: 0;
+    padding-left: 30px;
+}

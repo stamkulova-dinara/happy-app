@@ -1,0 +1,17 @@
+.block-security {
+    background-color:#F2F2F2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8% 16% 0 16%;
+}
+
+.block-security__image {
+    width: 376px;
+    position: absolute;
+}
+
+.block-security__text {
+    margin: 4% 0 0 60%;
+}

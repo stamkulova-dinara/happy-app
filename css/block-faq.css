@@ -1,0 +1,36 @@
+.block-faq {
+    background-color: #E5E5E5;
+    padding: 8%;
+    color: #222222;
+    font-weight: 400;
+}
+
+.block-faq__title {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.block-faq__cards{ 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-faq__card {
+    width: 560px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.block-faq__card-answer {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width: 960px) {
+    .block-faq__cards{ 
+        justify-content: center;
+    }
+
+}
