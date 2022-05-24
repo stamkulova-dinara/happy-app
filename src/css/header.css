@@ -8,7 +8,7 @@
     margin: 0;
     font-weight: 400 Regular;
     z-index: 5;
-    /* box-shadow: 10px 5px 5px #dfdddd; */
+    box-shadow: 0px 5px 14px 5px rgba(0,0,0,0.15);
 }
 
 .logo {
@@ -44,6 +44,10 @@ a {
     border-radius: 4px;
     font-size: 14px;
     line-height: 18px;
+}
+
+#appStore a {
+    color: #FFFFFF;
 }
 
 @media (max-width: 900px) {

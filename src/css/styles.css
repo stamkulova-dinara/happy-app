@@ -1,0 +1,29 @@
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./block-countdown.css');
+@import url('./block-darkmode.css');
+@import url('./block-downnload.css');
+@import url('./block-faq.css');
+@import url('./block-features.css');
+@import url('./modal-window.css');
+@import url('./block-hero.css');
+@import url('./block-pricing.css');
+@import url('./block-security.css');
+@import url('./block-statistics.css');
+@import url('./block-technology.css');
+@import url('./block-testimonials.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 400;
+}

@@ -10,70 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/block-hero.css">
-    <link rel="stylesheet" href="css/block-features.css">
-    <link rel="stylesheet" href="css/block-statistics.css">
-    <link rel="stylesheet" href="css/block-technology.css">
-    <link rel="stylesheet" href="css/block-security.css">
-    <link rel="stylesheet" href="css/block-darkmode.css">
-    <link rel="stylesheet" href="css/block-pricing.css">
-    <link rel="stylesheet" href="css/block-testimonials.css">
-    <link rel="stylesheet" href="css/block-faq.css">
-    <link rel="stylesheet" href="css/block-countdown.css">
-    <link rel="stylesheet" href="css/block-downnload.css">
-    <link rel="stylesheet" href="css/modal-window.css">
+    <link rel="stylesheet" href="/src/css/styles.css" />
     <title>Happy application</title>
   </head>
   <body>
-    <!-- modal -->
-    <div id="id01" class="modal">
-      <div class="modal-content">
-          <p>Leave a request for the purchase of goods</p>
-          <div class="modal-content__form">
-            <input type="text" class="modal-content__form-input" placeholder="name">
-            <input type="email" class="modal-content__form-input" placeholder="email">
-          </div>
-          <p>Your plan?</p>
-          <div class="modal-content__plan standart-plan">
-            <img src="images/check-mark.svg" alt="check-mark">
-            Standart
-          </div>
-          <div class="modal-content__plan premium-plan">
-            <img src="images/check-mark.svg" alt="check-mark">
-            Premium
-          </div>
-          <div class="modal-content__plan lifetime-plan">
-            <img src="images/check-mark.svg" alt="check-mark">
-            Lifetime
-          </div>
-          <div>
-            <p>How did you know about our app?</p>
-            <div>
-              <input type="checkbox" id="facebook" name="horns">
-              <label for="facebook">Facebook</label>
-            </div>
-            <div>
-              <input type="checkbox" id="instagram" name="horns">
-              <label for="instagram">Instagram</label>
-            </div>
-            <div>
-              <input type="checkbox" id="youtube" name="horns">
-              <label for="youtube">Youtube</label>
-            </div>
-            <div>
-              <input type="checkbox" id="other" name="horns">
-              <label for="other">Other</label>
-            </div>
-          </div>
-          <button class="button">send</button>
-      </div>
-    </div>
     <!-- header -->
     <header class="header">
       <div class="logo">
-        <img src="/images//Happy-Horizontal-Logotype.svg" alt="logotip" />
+        <img src="src/images/Happy-Horizontal-Logotype.svg" alt="logotip" />
       </div>
       <nav class="menu">
         <ul>
@@ -83,12 +27,12 @@
           <li class="menu-item"><a href="#section4">FAQ</a></li>
         </ul>
       </nav>
-      <button class="button"  id="modal-open" data-id="demo-modal" onclick="document.getElementById('id01').style.display='block'">Get this app</button>
+      <button class="button" id="appStore"></button>
     </header>
-    <!-- block-1 -->
-    <section class="block-countdown">
+    <!-- block-countdown -->
+    <section class="block-countdown" id="block-countdown">
       <img
-        src="/images/rectangle.svg"
+        src="src/images/rectangle.svg"
         alt="photo"
         class="block-countdown__back-image"
       />
@@ -96,8 +40,25 @@
         <h1 class="caption__text">big sale on lifetime plan</h1>
         <h2 class="caption__desc">there is very little left</h2>
         <div class="caption__time">
-          <p>00 | 03 | 26 | 59</p>
-          <a>days hours </a>
+          <div class="caption__timer__count">
+            <div class="caption__timer day">00</div>
+            <p>days</p>
+          </div>
+          <div>|</div>
+          <div class="caption__timer__count">
+            <div class="caption__timer hours">00</div>
+            <p>hours</p>
+          </div>
+          <div>|</div>
+          <div class="caption__timer__count">
+            <div class="caption__timer minutes">00</div>
+            <p>minutes</p>
+          </div>
+          <div>|</div>
+          <div class="caption__timer__count">
+            <div class="caption__timer seconds">00</div>
+            <p>seconds</p>
+          </div>
         </div>
       </div>
     </section>
@@ -105,7 +66,7 @@
     <section class="block-hero">
       <div class="block-hero__wrap">
         <div class="block-hero__wrap-text">
-          <img src="/images/happy-logotip.svg" alt="logotip" />
+          <img src="src/images/happy-logotip.svg" alt="logotip" />
           <div class="block__wrap-title">The future of digital photos.</div>
           <p class="block__wrap-desc">
             The H(app)y app is the latest & greatest in phone photography. It's
@@ -115,7 +76,7 @@
           <button class="button">Read more</button>
         </div>
         <div class="block-hero__image">
-          <img src="/images/phone-4.svg" alt="phone" class="image" />
+          <img src="src/images/phone-4.svg" alt="phone" class="image" />
         </div>
       </div>
     </section>
@@ -129,10 +90,10 @@
       </div>
       <div class="block-features__cards">
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-1.svg" alt="card-image"/>
+          <img class="block-features__card-image" src="src/images/phone-1.svg" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="/images/calendar-view.svg"
+              src="src/images/calendar-view.svg"
               alt="calendar-view"
               class="block-features-card-icon"
             />
@@ -144,10 +105,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-2.svg" alt="card-image"/>
+          <img class="block-features__card-image" src="src/images/phone-2.svg" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="/images/list.svg"
+              src="src/images/list.svg"
               alt="list"
               class="block-features-card-icon"
             />
@@ -159,10 +120,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-3.svg" alt="card-image"/>
+          <img class="block-features__card-image" src="src/images/phone-3.svg" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="/images/varied-type.svg"
+              src="src/images/varied-type.svg"
               alt="varied-type"
               class="block-features-card-icon"
             />
@@ -174,10 +135,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-4.svg" alt="card-image"/>
+          <img class="block-features__card-image" src="src/images/phone-4.svg" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="/images/split-screen.svg"
+              src="src/images/split-screen.svg"
               alt="split-screen"
               class="block-features-card-icon"
             />
@@ -191,10 +152,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-5.svg" alt="card-image" />
+          <img class="block-features__card-image" src="src/images/phone-5.svg" alt="card-image" />
           <div class="block-features__card-text">
             <img
-              src="/images/uploads.svg"
+              src="src/images/uploads.svg"
               alt="uploads"
               class="block-features-card-icon"
             />
@@ -206,10 +167,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="/images/phone-6.svg" alt="card-image"/>
+          <img class="block-features__card-image" src="src/images/phone-6.svg" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="/images/focus-mode.svg"
+              src="src/images/focus-mode.svg"
               alt="focus-mode"
               class="block-features-card-icon"
             />
@@ -254,7 +215,7 @@
       </div>
       <div class="block-technology__wrap-image">
         <img
-        src="/images/technology-page.svg"
+        src="src/images/technology-page.svg"
         alt="phone-4"
         class="block-technology__text-image image"
       />
@@ -264,7 +225,7 @@
     <section class="block-security">
       <div class="block-security__wrap-image">
         <img
-        src="/images/phone-4.svg"
+        src="src/images/phone-4.svg"
         alt="photo"
         class="block-security__image"
       />
@@ -295,18 +256,20 @@
           the lights. Lorem ipsum dolor sit amet.
         </p>
         <img
-          src="/images/dark-mode-image.svg"
+          src="src/images/dark-mode-image.svg"
           class="block-darkmode__wrap-image"
           alt="dark-mode"
         />
         <div class="block-darkmode__wrap-line">
           <div class="block-darkmode__wrap-btn" onclick="lightMode()">
-            <img src="/images/Sun-Icon.svg" alt="Sun-Icon" />
+            <img src="src/images/Sun-Icon.svg" alt="Sun-Icon" id="sunIcon"  class="icon-dark" />
+            <img src="src/images/Sun-Icon-yellow.svg" alt="Sun-Icon"  class="icon-light">
             <p class="block-darkmode__btn-text" id="light-mode">Light Mode</p>
           </div>
-          <div class="block-darkmode__wrap-btn" id="yell" onclick="NightMode()">
-            <img src="/images/Moon-Icon.svg" alt="Moon-Icon"/>
-            <p class="block-darkmode__btn-text">Dark mode</p>
+          <div class="block-darkmode__wrap-btn" onclick="NightMode()">
+            <img src="src/images/Moon-Icon.svg" alt="Moon-Icon" class="icon-dark" />
+            <img src="src/images/Moon-Icon-dark.svg" alt="Moon-Icon" class="icon-light"/>
+            <p class="block-darkmode__btn-text yellow">Dark mode</p>
           </div>
         </div>
       </div>
@@ -323,25 +286,76 @@
       </div>
       <div class="cards">
         <div class="block-pricing__card standart">
-          <p class="block-pricing__card-subtitle">Standard</p>
+          <p class="block-pricing__card-subtitle">standart</p>
           <p class="block-pricing__card-price">$9</p>
           <p class="subtitle" id="block-pricing-time">Monthly</p>
-          <button class="button" id="standart" onclick="document.getElementById('id01').style.display='block'">buy now</button>
+          <button class="button" id="standart" onclick="tarifPlan('standards')">buy now</button>
         </div>
         <div class="block-pricing__card premium">
-          <p class="block-pricing__card-subtitle">Premium</p>
+          <p class="block-pricing__card-subtitle">premium</p>
           <p class="block-pricing__card-price">$99</p>
           <p class="subtitle" id="block-pricing-time">Annually</p>
-          <button class="button" id="premium" onclick="document.getElementById('id01').style.display='block'">buy now</button>
+          <button class="button" id="premium" onclick="tarifPlan('premiums')">buy now</button>
         </div>
         <div class="block-pricing__card lifetime">
-          <p class="block-pricing__card-subtitle">Lifetime</p>
+          <p class="block-pricing__card-subtitle">lifetime</p>
           <p class="block-pricing__card-price">$149</p>
           <p class="subtitle" id="block-pricing-time">up front</p>
-          <button class="button" id="lifetime" onclick="document.getElementById('id01').style.display='block'">buy now</button>
+          <button class="button" id="lifetime" onclick="tarifPlan('lifetimes')">buy now</button>
         </div>
       </div>
     </section>
+    <!-- modal-window -->
+    <div id="modal" class="modal">
+      <div class="modal__wrapper">
+          <h4>Leave a request for the purchase of goods</h4>
+          <form>
+            <div class="modal-content__form">
+              <input type="text" class="modal-content__form-input" placeholder="name">
+              <input type="email" class="modal-content__form-input" placeholder="email">
+            </div>
+              <p>Your plan?</p>
+              <div class="plan">
+                  <label id="standards" class="standard-plan">
+                    <img src="src/images/check-mark.svg" alt="check-mark" class="check-mark"/>
+                      <input name="plan" type="radio">
+                      Standard
+                  </label>
+                  <label id="premiums" class="premium-plan">
+                    <img src="src/images/check-mark.svg" alt="check-mark" class="check-mark"/>
+                      <input name="plan" type="radio">
+                      Premium
+                  </label>
+                  <label id="lifetimes" class="lifetime-plan">
+                    <img src="src/images/check-mark.svg" alt="check-mark" class="check-mark"/>
+                      <input name="plan" type="radio">
+                      Lifetime
+                  </label>
+              </div>
+              <p>How did you know about our app?</p>
+              <div class="modal-window__checkbox-wrapper">
+                <label class="custom-checkbox">
+                    <input type="checkbox" value="value-1">
+                    <span>Facebook</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" value="value-2">
+                    <span>Instagram</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" value="value-3">
+                    <span>Youtube</span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" value="value-4">
+                    <span>Other</span>
+                </label>
+            </div>
+            <button  class="button send-btn" type="submit">send</button>
+        </div>
+          </form>
+      </div>
+  </div>
     <!-- block-testimonials -->
     <section class="block-testimonials" id="section3">
       <div class="block-pricing__text">
@@ -385,7 +399,7 @@
           Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in
           convallis risus egestas non.
         </p>
-        <img src="/images/download.svg" alt="download"/>
+        <img src="src/images/download.svg" alt="download"/>
       </div>
     </section>
     <!-- block-faq -->
@@ -433,13 +447,17 @@
       </div>
     </section>
     <footer>
-        <img src="/images/Happy-Vertical-Logotype.svg" alt="logotype"/>
+        <img src="src/images/Happy-Vertical-Logotype.svg" alt="logotype"/>
         <div class="footer-social">
-            <img src="/images/twitter.svg" class="footer-social__icon" alt="twitter"/>
-            <img src="/images/instagram.svg" alt="instagram" class="footer-social__icon">
-            <img src="/images/facebook.svg" alt="facebook"/>
+            <img src="src/images/twitter.svg" class="footer-social__icon" alt="twitter"/>
+            <img src="src/images/instagram.svg" alt="instagram" class="footer-social__icon">
+            <img src="src/images/facebook.svg" alt="facebook"/>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script type="module" src="src/js/script.js"></script>
+    <script src="src/js/modal-window.js"></script>
+    <script type="module" src="src/js/plans.js"></script>
+    <script src="src/js/get-countdown.js"></script>
+
   </body>
 </html>

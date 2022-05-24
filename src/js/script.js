@@ -1,4 +1,4 @@
-window.slide = new SlideNav();
+import config from '../../data/config.json' assert {type: "json"}
 
 function lightMode() {
     let element = document.getElementById("sun")
@@ -13,3 +13,16 @@ function NightMode() {
     element.style.color = "#FFFFFF"
     document.getElementById('light-mode').style.color = "#FFFFFF"
 }
+
+function appStorelink() {
+    const storelink = config.appStoreLink
+    console.log(storelink);
+    let button = document.getElementById('appStore')
+    let a = document.createElement('a')
+    a.href = storelink
+    a.target = '_blank'
+    a.innerText = 'Get this app'
+    button.append(a)
+}
+
+appStorelink()
