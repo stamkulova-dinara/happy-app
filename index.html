@@ -263,12 +263,12 @@
         <div class="block-darkmode__line"></div>
         <div class="block-darkmode__wrap-btns">
           <button class="block-darkmode__wrap-btn" id="light-mode">
-            <img class="sun-icon" alt="sun-icon"/>
-            <p class="block-darkmode__btn-text light-btn-text">Light Mode</p>
+            <img class="sun-icon" alt="sun-icon"/><br>
+            <span class="block-darkmode__btn-text light-btn-text">Light Mode</span>
           </button>
           <button class="block-darkmode__wrap-btn" id="night-mode">
-            <img class="moon-icon" alt="moon-icon"/>
-            <p class="block-darkmode__btn-text night-btn-text" id="darkmode-btn-text">Dark mode</p>
+            <img class="moon-icon" alt="moon-icon"/><br>
+            <span class="block-darkmode__btn-text night-btn-text" id="darkmode-btn-text">Dark mode</span>
           </button>
         </div>
       </div>
@@ -287,19 +287,19 @@
         <div class="block-pricing__card standart">
           <p class="block-pricing__card-subtitle">standart</p>
           <p class="block-pricing__card-price">$9</p>
-          <p class="subtitle" id="block-pricing-time">Monthly</p>
+          <p class="subtitle block-pricing-time">Monthly</p>
           <button class="button" id="standart" onclick="tarifPlan('standards')">buy now</button>
         </div>
         <div class="block-pricing__card premium">
           <p class="block-pricing__card-subtitle">premium</p>
           <p class="block-pricing__card-price">$99</p>
-          <p class="subtitle" id="block-pricing-time">Annually</p>
+          <p class="subtitle block-pricing-time">Annually</p>
           <button class="button" id="premium" onclick="tarifPlan('premiums')">buy now</button>
         </div>
         <div class="block-pricing__card lifetime">
           <p class="block-pricing__card-subtitle">lifetime</p>
           <p class="block-pricing__card-price">$149</p>
-          <p class="subtitle" id="block-pricing-time">up front</p>
+          <p class="subtitle block-pricing-time">up front</p>
           <button class="button" id="lifetime" onclick="tarifPlan('lifetimes')">buy now</button>
         </div>
       </div>
@@ -351,10 +351,9 @@
                 </label>
             </div>
             <button  class="button send-btn" type="submit">send</button>
-        </div>
           </form>
+        </div>
       </div>
-  </div>
     <!-- block-testimonials -->
     <section class="block-testimonials" id="section3">
       <div class="block-pricing__text">
@@ -458,6 +457,5 @@
     <script type="module" src="src/js/plans.js"></script>
     <script src="src/js/get-countdown.js"></script>
     <script src="src/js/dark-light-mode.js"></script>
-
   </body>
 </html>
