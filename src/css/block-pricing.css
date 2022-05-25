@@ -10,18 +10,6 @@
     text-align: center;
 } 
 
-.block-pricing__title {
-    font-size: 32px;
-    line-height: 36px;
-}
-
-.block-pricing__text-desc {
-    padding: 0 25% 0 25%;
-    line-height: 24px;
-    font-size: 18px;
-    color: #666666;
-}
-
 .cards{
     display: flex;
     justify-content: space-between;

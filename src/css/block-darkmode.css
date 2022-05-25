@@ -31,8 +31,22 @@
 .block-darkmode__wrap-btns {
     width: 100%;
     margin: 0;
-    padding-top: 41px;
+    padding: 41px;
     display: flex;
+}
+
+.block-darkmode__wrap-btn {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-left: 18%;
+    border: none;
+    background: none;
+}
+
+.block-darkmode__wrap-btn:hover {
+    cursor: pointer;
 }
 
 .sun-icon {
@@ -45,20 +59,6 @@
 
 #darkmode-text, #darkmode-btn-text{
     color:#FF9209;
-}
-
-.block-darkmode__wrap-btn {
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-    margin-left: 25%;
-    border: none;
-    background: none;
-}
-
-.block-darkmode__wrap-btn:hover {
-    cursor: pointer;
 }
 
 .block-darkmode__btn-text {

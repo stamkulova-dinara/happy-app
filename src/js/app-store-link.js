@@ -2,7 +2,6 @@ import config from '../../data/config.json' assert {type: "json"}
 
 function appStorelink() {
     const storelink = config.appStoreLink
-    console.log(storelink);
     let button = document.getElementById('appStore')
     let a = document.createElement('a')
     a.href = storelink
