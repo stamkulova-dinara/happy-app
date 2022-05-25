@@ -245,11 +245,11 @@
       </div>
     </section>
     <!-- block-dark-mode -->
-    <section class="block-darkmode" id="sun">
+    <section class="block-darkmode" >
       <div class="block-darkmode__wrap">
-        <p class="subtitle">Dark mode</p>
+        <p class="subtitle" id="dark-light-mode">Dark mode</p>
         <p class="block-darkmode__title">
-          Also available in <span id="yell">dark</span>.
+          Also available in <span id="darkmode-text">dark</span>.
         </p>
         <p class="block-darkmode__desc">
           Don't get blinded when using the H(app)y app at night, just turn off
@@ -260,17 +260,16 @@
           class="block-darkmode__wrap-image"
           alt="dark-mode"
         />
-        <div class="block-darkmode__wrap-line">
-          <div class="block-darkmode__wrap-btn" onclick="lightMode()">
-            <img src="src/images/Sun-Icon.svg" alt="Sun-Icon" id="sunIcon"  class="icon-dark" />
-            <img src="src/images/Sun-Icon-yellow.svg" alt="Sun-Icon"  class="icon-light">
-            <p class="block-darkmode__btn-text" id="light-mode">Light Mode</p>
-          </div>
-          <div class="block-darkmode__wrap-btn" onclick="NightMode()">
-            <img src="src/images/Moon-Icon.svg" alt="Moon-Icon" class="icon-dark" />
-            <img src="src/images/Moon-Icon-dark.svg" alt="Moon-Icon" class="icon-light"/>
-            <p class="block-darkmode__btn-text yellow">Dark mode</p>
-          </div>
+        <div class="block-darkmode__line"></div>
+        <div class="block-darkmode__wrap-btns">
+          <button class="block-darkmode__wrap-btn" id="light-mode">
+            <img class="sun-icon" alt="sun-icon"/>
+            <p class="block-darkmode__btn-text light-btn-text">Light Mode</p>
+          </button>
+          <button class="block-darkmode__wrap-btn" id="night-mode">
+            <img class="moon-icon" alt="moon-icon"/>
+            <p class="block-darkmode__btn-text night-btn-text" id="darkmode-btn-text">Dark mode</p>
+          </button>
         </div>
       </div>
     </section>
@@ -458,6 +457,7 @@
     <script src="src/js/modal-window.js"></script>
     <script type="module" src="src/js/plans.js"></script>
     <script src="src/js/get-countdown.js"></script>
+    <script src="src/js/dark-light-mode.js"></script>
 
   </body>
 </html>

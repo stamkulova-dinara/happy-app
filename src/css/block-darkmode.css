@@ -2,7 +2,6 @@
     background-color:#222222;
     position: relative;
     color:#FFFFFF;
-    /* padding: 100px 420px 160px 420px; */
     padding: 8% 28% 14% 28%;
     font-weight: 400;
 }
@@ -18,10 +17,6 @@
     margin: 0;
 }
 
-#yell {
-    color:#FF9209;
-}
-
 .block-darkmode__desc {
     font-size: 18px;
     line-height: 24px;
@@ -33,20 +28,22 @@
     margin: 0;
 }
 
-.block-darkmode__wrap-line {
+.block-darkmode__wrap-btns {
     width: 100%;
     margin: 0;
-    border-top: 2px solid #E5E5E5;
     padding-top: 41px;
     display: flex;
-    /* justify-content: center; */
 }
 
-.icon-light {
-    display: none;
+.sun-icon {
+    content: url('/src/images/Sun-Icon.svg');
 }
 
-.yellow {
+.moon-icon {
+    content: url('/src/images/Moon-Icon.svg');
+}
+
+#darkmode-text, #darkmode-btn-text{
     color:#FF9209;
 }
 
@@ -56,9 +53,43 @@
     line-height: 20px;
     text-transform: uppercase;
     margin-left: 25%;
+    border: none;
+    background: none;
 }
 
+.block-darkmode__wrap-btn:hover {
+    cursor: pointer;
+}
 
 .block-darkmode__btn-text {
     margin: 0;
+}
+
+.block-darkmode__line {
+    width: 100%;
+    height: 2px;
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+
+#light {
+    background-color: #FFFFFF;
+    color: #222222;
+}
+
+#light .sun-icon{
+    content: url('/src/images/Sun-Icon-yellow.svg');
+}
+
+#light .moon-icon {
+    content: url('/src/images/Moon-Icon-dark.svg');
+}
+
+#light .light-btn-text {
+    color: #FF9209;
+}
+
+#light .night-btn-text {
+    color: #222222;
 }
