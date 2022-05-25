@@ -49,20 +49,8 @@
     cursor: pointer;
 }
 
-.sun-icon {
-    content: url('/src/images/Sun-Icon.svg');
-}
-
-.moon-icon {
-    content: url('/src/images/Moon-Icon.svg');
-}
-
-#darkmode-text, #darkmode-btn-text{
+#darkmode-text{
     color:#FF9209;
-}
-
-.block-darkmode__btn-text {
-    margin: 0;
 }
 
 .block-darkmode__line {
@@ -78,18 +66,30 @@
     color: #222222;
 }
 
-#light .sun-icon{
-    content: url('/src/images/Sun-Icon-yellow.svg');
+#light #night-mode {
+    color: #222222;
 }
 
-#light .moon-icon {
-    content: url('/src/images/Moon-Icon-dark.svg');
-}
+#light #light-mode svg path{ 
+    fill:#FF9209
+} 
 
-#light .light-btn-text {
+#night-mode {
     color: #FF9209;
 }
 
-#light .night-btn-text {
-    color: #222222;
+#light #night-mode svg path{
+    fill: #222222
+}
+
+#light #light-mode {
+    color: #FF9209;
+}
+
+#light-mode svg path{ 
+    fill:#fff
+} 
+
+#night-mode svg path{
+    fill: #FF9209
 }

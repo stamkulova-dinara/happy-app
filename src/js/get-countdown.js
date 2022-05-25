@@ -1,28 +1,25 @@
-let getCountDown = async() => {
-    const response = await fetch('../data/config.json')
-    const responseJson = await response.json()
-    const date = new Date(responseJson.timerEndDate)
-    const currentDate = new Date().getTime()
-    const timer = date - currentDate
+import config from '../../data/config.json' assert {type: "json"}
+const birthday = new Date(config.timerEndDate)
 
-    const second = 1000
-    const minute = second * 60
-    const hour = minute * 60
-    const day = hour * 24
+const second = 1000
+const minute = second * 60
+const hour = minute * 60
+const day = hour * 24
+let timerId
 
-     const days = Math.floor(timer/day)
-     const hours = Math.floor((timer % day) / hour)
-     const minutes = Math.floor((timer % hour) / minute)
-     const seconds = Math.floor((timer % minute) / second)
+function countDown() {
+  const today = new Date()
+  const timeSpan = birthday - today
 
-    function getTimer(e){
-        return (e < 10 ? "0" : "") + e;
-    }
+  const days = Math.floor(timeSpan / day)
+  const hours = Math.floor((timeSpan % day) / hour)
+  const minutes = Math.floor((timeSpan % hour) / minute)
+  const seconds = Math.floor((timeSpan % minute) / second)
 
-    document.querySelector(".day").innerText = getTimer(days)
-    document.querySelector(".hours").innerText = getTimer(hours)
-    document.querySelector(".minutes").innerText = getTimer(minutes)
-    document.querySelector(".seconds").innerText = getTimer(seconds)
-
+  document.querySelector(".day").innerText = days
+    document.querySelector(".hours").innerText = hours
+    document.querySelector(".minutes").innerText = minutes
+    document.querySelector(".seconds").innerText = seconds
 }
-setInterval(getCountDown, 100)
+
+timerId = setInterval(countDown, second)
