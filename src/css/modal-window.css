@@ -55,7 +55,7 @@
   line-height: 24px;
 }
 
-.modal-visible {
+.modal-visiblity {
   opacity: 1;
   pointer-events: all;
 }
@@ -175,9 +175,23 @@
   background-size: 14px;
 }
 
+.modal-window__loading-text {
+  display: flex;
+  color: #7e7e7e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  gap: 15px;
+  margin-top: 18px;
+}
+
 .custom-checkbox {
   width: 100%;
   align-items: flex-start;
   text-align: start;
   padding: 0 38%;
+}
+
+.send-btn {
+  width: 172px;
 }
