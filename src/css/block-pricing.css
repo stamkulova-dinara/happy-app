@@ -49,7 +49,7 @@
     background-color: #0278ED;
 }
 
-.standart {
+.standart-plans {
     padding: 50px 0 0 0;
     color: #0278ED;
 }
@@ -58,7 +58,7 @@
     background-color: #FF5437;
 }
 
-.premium {
+.premium-plans {
     padding: 50px 0 0 0;
     color: #FF5437;
 }
@@ -67,7 +67,7 @@
     background-color:#FF9209;
 }
 
-.lifetime {
+.lifetime-plans {
     padding: 50px 0 0 0;
     color: #FF9209;
 }
