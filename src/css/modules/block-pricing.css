@@ -10,13 +10,6 @@
     text-align: center;
 } 
 
-.cards{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
 .block-pricing__card {
     width: 379px;
     height: 338px;
@@ -25,6 +18,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
+    padding: 50px 0 0 0;
 }
 
 .block-pricing__card-price {
@@ -38,7 +32,6 @@
 }
 
 .standart-plans {
-    padding: 50px 0 0 0;
     color: #0278ED;
 }
 
@@ -47,7 +40,6 @@
 }
 
 .premium-plans {
-    padding: 50px 0 0 0;
     color: #FF5437;
 }
 
@@ -56,10 +48,12 @@
 }
 
 .lifetime-plans {
-    padding: 50px 0 0 0;
     color: #FF9209;
 }
 
+.block-pricing__card button {
+    width: 129px;
+}
 .block-pricing__card-subtitle {
     margin: 0;
     

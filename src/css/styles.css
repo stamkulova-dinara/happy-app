@@ -1,23 +1,49 @@
-@import url('./header.css');
-@import url('./footer.css');
-@import url('./block-countdown.css');
-@import url('./block-darkmode.css');
-@import url('./block-downnload.css');
-@import url('./block-faq.css');
-@import url('./block-features.css');
-@import url('./modal-window.css');
-@import url('./block-hero.css');
-@import url('./block-pricing.css');
-@import url('./block-security.css');
-@import url('./block-statistics.css');
-@import url('./block-technology.css');
-@import url('./block-testimonials.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('./modules/header.css');
+@import url('./modules/block-countdown.css');
+@import url('./modules/block-darkmode.css');
+@import url('./modules/block-downnload.css');
+@import url('./modules/block-faq.css');
+@import url('./modules/block-features.css');
+@import url('./modules/modal-window.css');
+@import url('./modules/block-hero.css');
+@import url('./modules/block-pricing.css');
+@import url('./modules/block-security.css');
+@import url('./modules/block-statistics.css');
+@import url('./modules/block-technology.css');
+@import url('./modules/block-testimonials.css');
+@import url('./modules/footer.css');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
+}
+
+.button {
+    height: 40px;
+    border: none;
+    background: #222222;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background-color:#4E4E4E;
+}
+
+.button:focus {
+    outline: 2px solid #5AB0FF;
 }
 
 .title {
@@ -38,4 +64,11 @@ body {
     line-height: 24px;
     font-size: 18px;
     color: #666666;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }

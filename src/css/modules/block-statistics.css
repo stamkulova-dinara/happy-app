@@ -15,10 +15,10 @@
 }
 
 .block-statistics__desc {
-    padding-left: 10px;
-    margin: 20px 0 0 0;
+    text-align: center;
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: 2px;
 }
 
 @media (max-width: 996px){

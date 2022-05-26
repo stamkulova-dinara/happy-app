@@ -3,7 +3,7 @@
     padding: 8%;
 }
 
-.card {
+.block-testimonial__card {
     width: 375px;
     height: 224px;
     border-radius: 20px;
@@ -11,7 +11,7 @@
     margin-bottom: 10px;
 }
 
-.card__testimonial {
+.block-testimonial__card-text {
     font-size: 16px;
     line-height: 24px;
     padding: 30px 30px 22px 30px;
@@ -19,7 +19,7 @@
     height: 96px;
 }
 
-.card__testimonial-author, .card__testimonial-workplace{
+.block-testimonial__card-author, .block-testimonial__card-workplace{
     margin: 0;
     padding-left: 30px;
 }

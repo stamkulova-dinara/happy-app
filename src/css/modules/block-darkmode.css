@@ -4,10 +4,7 @@
     color:#FFFFFF;
     padding: 8% 28% 14% 28%;
     font-weight: 400;
-}
-
-.block-darkmode__wrap {
-    width: 100%;
+    align-items: center;
     text-align: center;
 }
 
@@ -25,7 +22,13 @@
 
 .block-darkmode__wrap-image {
     width: 400px;
-    margin: 0;
+}
+
+.block-darkmode__line {
+    width: 45%;
+    border: 1px solid #E5E5E5;
+    bottom: 322px;
+    position: absolute;
 }
 
 .block-darkmode__wrap-btns {
@@ -43,6 +46,10 @@
     margin-left: 18%;
     border: none;
     background: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .block-darkmode__wrap-btn:hover {
@@ -51,14 +58,6 @@
 
 #darkmode-text{
     color:#FF9209;
-}
-
-.block-darkmode__line {
-    width: 100%;
-    height: 2px;
-    background-color: #E5E5E5;
-    margin: 0;
-    padding: 0;
 }
 
 #light {

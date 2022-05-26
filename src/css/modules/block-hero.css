@@ -1,14 +1,11 @@
 .block-hero {
     padding: 7% 9% 7% 10%;
-}
-
-.block-hero__wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.block-hero__wrap-text {
+.block-hero__info{
     width: 400px;
     color:#222222;
     font-weight: 400 Regular;
@@ -20,12 +17,18 @@
     line-height: 60px;
     margin: 0;
 }
-.block-hero__image {
-    width: 379px;
-    height: 400px;
-}
-.block__wrap-desc {
+
+.block-hero__info-desc {
     font-size: 16px;
     line-height: 24px;
     padding-right: 10px;
+}
+
+.block-hero__info-btn {
+    width: 148px;
+}
+
+.block-hero__image {
+    width: 379px;
+    height: 400px;
 }

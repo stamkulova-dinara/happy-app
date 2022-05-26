@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1.5% 6% 1.5% 8%;
+  font-weight: 400 Regular;
+  z-index: 5;
+  box-shadow: 0px 5px 14px 5px rgba(0, 0, 0, 0.15);
+}
+
+.header__logo {
+  margin-top: 5px;
+}
+
+.header__menu {
+  font-size: 15px;
+  line-height: 24px;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header__menu__nav-item {
+  margin-right: 42px;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.header__menu-form__btn {
+  margin-right: 250px;
+  width: 172px;
+}

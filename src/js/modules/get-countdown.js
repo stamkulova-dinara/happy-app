@@ -1,5 +1,5 @@
-import config from '../../data/config.json' assert {type: "json"}
-const birthday = new Date(config.timerEndDate)
+import config from '../../../data/config.json' assert {type: "json"}
+const timerEndDate = new Date(config.timerEndDate)
 
 const second = 1000
 const minute = second * 60
@@ -9,7 +9,7 @@ let timerId
 
 function countDown() {
   const today = new Date()
-  const timeSpan = birthday - today
+  const timeSpan = timerEndDate - today
 
   const days = Math.floor(timeSpan / day)
   const hours = Math.floor((timeSpan % day) / hour)
