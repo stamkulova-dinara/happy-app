@@ -10,18 +10,25 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header__logo">
-        <img src="src/images/Happy-Horizontal-Logotype.svg" alt="logotip" />
+      <div class="header__container">
+        <div class="header__container__logo">
+          <img src="src/images/Happy-Horizontal-Logotype.svg" alt="logotip" />
+        </div>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
       </div>
-      <nav class="header__menu">
-        <ul>
-          <li class="header__menu__nav-item"><a href="#features">Features</a></li>
-          <li class="header__menu__nav-item"><a href="#pricing">Pricing</a></li>
-          <li class="header__menu__nav-item"><a href="#testimonials">Testimonials</a></li>
-          <li class="header__menu__nav-item"><a href="#faq">FAQ</a></li>
-        </ul>
-        <button class="header__menu-form__btn button">Get this app</button>
-      </nav>
+        <nav class="header__menu">
+          <ul>
+            <li class="header__menu__nav-item"><a href="#features">Features</a></li>
+            <li class="header__menu__nav-item"><a href="#pricing">Pricing</a></li>
+            <li class="header__menu__nav-item"><a href="#testimonials">Testimonials</a></li>
+            <li class="header__menu__nav-item"><a href="#faq">FAQ</a></li>
+          </ul>
+          <button class="header__menu-form__btn button">Get this app</button>
+        </nav>
+      </div>
     </header>
     <!-- block-countdown -->
     <section class="block-countdown" id="block-countdown">
@@ -65,7 +72,7 @@
             The H(app)y app is the latest & greatest in phone photography. It's
             available in the App Store right now. Go check it out!
           </p>
-          <button class="block-hero__info-btn button">buy now</button>
+          <button class="block-hero__info-btn button" onclick="tarifPlan('lifetimes')">buy now</button>
           <button class="block-hero__info-btn button">Read more</button>
         </div>
         <div class="block-hero__image">
@@ -296,26 +303,34 @@
           <p class="block-pricing__card-subtitle lifetime"></p>
           <p class="block-pricing__card-price lifetime-price"></p>
           <p class="block-pricing-time title">up front</p>
-          <button class="button" id="lifetime" onclick="tarifPlan('lifetimes')">buy now</button>
+          <button class="button trigger" id="lifetime" onclick="tarifPlan('lifetimes')">buy now</button>
         </div>
       </div>
     </section>
     <!-- modal-window -->
     <div id="modal" class="modal">
       <div class="modal__wrapper">
-        <!-- <button><img src="src/images/close-modal-window.svg"/></button> -->
+        <div class="modal__wrapper-header">
           <h4>Leave a request for the purchase of goods</h4>
+          <button class="modal__wrapper__close"><img src="src/images/close-modal-window.svg"/></button>
+        </div>
           <form id="form">
             <div class="modal-content__form">
-              <input type="text" class="modal-content__form-input" placeholder="name" id="name">
-              <input type="email" class="modal-content__form-input" placeholder="email" id="email">
+              <div class="modal-content__form-input">
+                <input type="text" placeholder="name" id="name">
+                <p id="username-error"></p>
+              </div>
+              <div class="modal-content__form-input">
+                <input type="email" placeholder="email" id="email">
+                <p id="email-error"></p>
+              </div>
             </div>
               <p>Your plan?</p>
               <div class="plan">
                   <label id="standards" class="standard-plan">
                     <img src="src/images/check-mark.svg" alt="check-mark" class="check-mark"/>
                       <input name="plan" type="radio">
-                      Standard
+                      Standart
                   </label>
                   <label id="premiums" class="premium-plan">
                     <img src="src/images/check-mark.svg" alt="check-mark" class="check-mark"/>
@@ -331,23 +346,28 @@
               <p>How did you know about our app?</p>
               <div class="modal-window__checkbox-wrapper">
                 <label class="custom-checkbox">
-                    <input type="checkbox" value="value-1">
+                    <input type="checkbox" value="Facebook" class="checkbox">
                     <span>Facebook</span>
                 </label>
                 <label class="custom-checkbox">
-                    <input type="checkbox" value="value-2">
+                    <input type="checkbox" value="Instagram" class="checkbox">
                     <span>Instagram</span>
                 </label>
                 <label class="custom-checkbox">
-                    <input type="checkbox" value="value-3">
+                    <input type="checkbox" value="Youtube" class="checkbox">
                     <span>Youtube</span>
                 </label>
                 <label class="custom-checkbox">
-                    <input type="checkbox" value="value-4">
+                    <input type="checkbox" value="Other" class="checkbox">
                     <span>Other</span>
                 </label>
+                <div class="error"></div>
             </div>
-            <button  class="button send-btn" type="submit">send</button>
+            <button class="button send-btn" type="submit">send</button>
+            <div class="modal-content__form__loading">
+              <img src="src/images/loading.svg" class="modal-content__form__loading__img"/>
+              <span>loading...</span>
+            </div>
           </form>
         </div>
       </div>

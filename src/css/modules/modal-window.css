@@ -9,11 +9,10 @@
   transition: 0.3s;
   pointer-events: none;
   left: 0;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  font-family: Poppins;
   overflow: hidden scroll;
   font-weight: 400;
 }
@@ -22,11 +21,32 @@
   background-color: #ffffff;
   max-width: 506px;
   padding: 2% 0;
-  margin: 150px 0 10px 0;
+  margin: 250px 0 100px 0;
   text-align: center;
   color: #000000;
   font-size: 20px;
   line-height: 30px;
+  /* height: auto; */
+}
+
+.modal__wrapper-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-visiblity {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__wrapper__close {
+  border: none;
+  background: none;
+  height: 20px;
+}
+
+.modal__wrapper__close:hover {
+  cursor: pointer;
 }
 
 .modal__wrapper h4 {
@@ -34,9 +54,8 @@
   font-size: 20px;
   line-height: 30px;
   width: 312px;
-  margin: 0 auto;
+  margin: 10px 0 0 60px;
   box-sizing: border-box;
-  padding: 0 20px;
   text-align: center;
 }
 
@@ -45,28 +64,25 @@
 }
 
 .modal-content__form-input {
-  width: 330px;
-  height: 42px;
-  margin-bottom: 17px;
+  width: 506px;
+}
+
+.modal-content__form-input input {
   background-color: #f2f2f2;
   border: none;
   padding: 7px 17px;
   font-size: 16px;
   line-height: 24px;
+  width: 330px;
+  height: 42px;
 }
 
-.modal-visiblity {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.modal-content__form-input:focus {
-  outline: none;
+.modal-content__form-input input:focus {
+  outline: 2px solid #5AB0FF;
 }
 
 .modal__wrapper form p {
   margin: 0;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin-top: 15px;
@@ -106,6 +122,18 @@
 .premium-plan {
   border: 1px solid #ff5437;
   color: #ff5437;
+}
+
+.error-input {
+  background: #FFEEEE !important;
+}
+.error, #email-error, #username-error {
+  color: #FF5437;
+  font-size: 12px;
+  line-height: 18px;
+}
+#email-error, #username-error {
+  margin: 4px 220px 5px 0;
 }
 
 .lifetime-plan {
@@ -171,7 +199,7 @@
 
 .custom-checkbox > input:checked + span::before {
   border-color: #0b76ef;
-  background-image: url("../images/checkmark.svg");
+  background-image: url("../../images/checkmark.svg");
   background-size: 14px;
 }
 
@@ -194,4 +222,33 @@
 
 .send-btn {
   width: 172px;
+}
+
+.modal-content__form__loading {
+  margin-top: 28px;
+  display: none;
+}
+
+.modal-content__form__loading span{
+  color:#7E7E7E;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#loading {
+  display: block;
+}
+
+.modal-content__form__loading__img {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
