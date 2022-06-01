@@ -25,17 +25,16 @@
 }
 
 .block-darkmode__line {
-    width: 45%;
+    width: 100%;
+    margin-top: -8px;
     border: 1px solid #E5E5E5;
-    bottom: 322px;
-    position: absolute;
 }
 
 .block-darkmode__wrap-btns {
-    width: 100%;
-    margin: 0;
-    padding: 41px;
+    max-width: 600px;
+    margin: 40px;
     display: flex;
+    justify-content: center;
 }
 
 .block-darkmode__wrap-btn {
@@ -43,7 +42,6 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    margin-left: 18%;
     border: none;
     background: none;
     display: flex;
@@ -91,4 +89,30 @@
 
 #night-mode svg path{
     fill: #FF9209
+}
+
+#light-mode { 
+    margin-right: 50px;
+}
+
+@media (max-width: 1115px) {
+    .block-darkmode__wrap-image {
+        width: 350px;
+    }
+}
+
+@media (max-width: 960px) {
+    .block-darkmode {
+        padding: 8% 15% 9% 15%;
+    }
+    .block-darkmode__wrap-image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block-darkmode__wrap-btns {
+        width: 250px;
+        margin: 40px 10px;
+    }
 }

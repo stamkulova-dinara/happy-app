@@ -59,6 +59,7 @@ body {
 .subtitle {
     font-size: 32px;
     line-height: 36px;
+    margin: 0;
 }
 
 .description {
@@ -73,5 +74,24 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
-    max-width: 1440px;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+.block-text__desc {
+    font-size: 16px;
+    line-height: 24px;
+    color:#666666;
+    margin-bottom: 188px;
+}
+
+@media (max-width: 850px) {
+    .block-text__desc  {
+        margin-bottom: 20px;
+    }
+    .cards {
+        justify-content: center;
+    }
 }

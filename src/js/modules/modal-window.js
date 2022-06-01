@@ -1,9 +1,14 @@
 // close modal
-const modal = document.querySelector(".modal");
-const closeModal = document.querySelector('.modal__wrapper__close')
+  const modal = document.querySelector(".modal");
+  const closeModal = document.querySelector('.modal__wrapper__close')
 
 closeModal.addEventListener('click', () => {
   modal.classList.remove("modal-visiblity")
+  emailError.textContent = ''
+  email.removeAttribute('class')
+  nameError.textContent = ''
+  username.removeAttribute('class')
+  checkboxError.textContent = ''
 })
 
 const planInputs = document.querySelectorAll(".plan label input");
@@ -132,6 +137,7 @@ function onChangeCheckbox() {
       })
       });
     })
+   info.choosenPlan = document.querySelector("input[type='radio']:checked").value
 }
 
 form.addEventListener('submit',function(e) {

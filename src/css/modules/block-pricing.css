@@ -1,5 +1,4 @@
 .block-pricing {
-    /* padding: 100px 100px 85px 100px; */
     padding: 8% 7% 6% 8%;
     color: #222222;
     font-weight: 400;
@@ -12,13 +11,13 @@
 } 
 
 .block-pricing__card {
-    width: 379px;
+    width: 370px;
     height: 305px;
     border-radius: 20px;
     background-color: #F2F2F2;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 5px;
     padding: 45px 0 0 0;
 }
 
@@ -66,7 +65,10 @@
 }
 
 @media (max-width: 996px){
-    .cards {
-        justify-content: center;
+    .block-pricing {
+        padding: 8% 1% 6% 1%;
+    }
+    .block-pricing__card {
+        width: 349px;
     }
 }

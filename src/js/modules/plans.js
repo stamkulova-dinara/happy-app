@@ -1,12 +1,12 @@
-import config from '../../../data/config.json' assert {type: "json"}
- 
-const [ standart, premium, lifetime ] = config.plans;
+export const renderPlans = (plans) => {
+    const [ standart, premium, lifetime ] = plans;
 
-function renderPlansFromConfig({ name, price }) {
-    document.querySelector(`.${name}`).innerText = name;
-    document.querySelector(`.${name}-price`).innerText = `$${price}`;
- }
+    function renderPlansFromConfig({ name, price }) {
+        document.querySelector(`.${name}`).innerText = name;
+        document.querySelector(`.${name}-price`).innerText = `$${price}`;
+    }
 
- renderPlansFromConfig(standart);
- renderPlansFromConfig(premium);
- renderPlansFromConfig(lifetime);
+    renderPlansFromConfig(standart);
+    renderPlansFromConfig(premium);
+    renderPlansFromConfig(lifetime);
+}

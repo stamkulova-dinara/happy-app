@@ -1,20 +1,15 @@
 .block-countdown {
-    /* height: 500px; */
     height: 436px;
     background-image: url('../../images/rectangle.svg');
 }
 
 .block-countdown__back-image {
-    /* top: 76px; */
-    /* width: 100%; */
-    /* width: auto; */
     width: 1440px;
     padding-bottom: 50px;
-    /* height: 508px; */
     position: absolute;
 }
 
-.caption {
+.block-countdown__caption {
     font-weight: 700;
     padding-top: 55px;
     align-items: center;
@@ -22,21 +17,21 @@
     color:#FFFFFF;
 }
 
-.caption__text {
+.block-countdown__caption__text {
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
     margin: 0;
 }
 
-.caption__time {
+.block-countdown__caption__time {
     width: 729px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.caption__timer {
+.block-countdown__caption__timer {
     font-style: normal;
     font-weight: 400;
     color: #FFFFFF;
@@ -46,12 +41,7 @@
     text-transform: uppercase;
 }
 
-.sale__timer__count b {
-    font-weight: 300;
-    margin: 0px 25px 0px 25px
-}
-
-.caption__timer__count p {
+.block-countdown__caption__timer__count p {
     font-weight: 700;
     font-size: 24px;
     margin: 0px 12px;
@@ -59,40 +49,30 @@
     letter-spacing: 1.5px;
     color: #FFFFFF;
 }
-.timer div {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    color: #FFFFFF;
-    font-size: 100px;
-    line-height: 150px;
-    letter-spacing: 1.1px;
-}
 
-.caption__desc {
+.block-countdown__caption__desc {
     font-size: 30px;
     line-height: 45px;
     color:#FFFFFF;
     margin: 0;
 }
 
-.caption__time {
+.block-countdown__caption__time {
     font-size: 100px;
     line-height: 150px;
     font-weight: 400;
 }
-.caption__times {
+.block-countdown__caption__times {
     width: 50%;
     display: flex;
     justify-content: space-around;
     margin: 0 0 0 320px;
 }
 
-
-.caption__times p {
+.block-countdown__caption__times p {
     margin: 0;
 }
-.caption__time-text {
+.block-countdown__caption__time-text {
     font-size: 24px;
     display: flex;
     width: 47%;
@@ -102,15 +82,46 @@
     margin-top: 0;
 }
 
-.caption__time-text p {
+.block-countdown__caption__time-text p {
     margin: 0;
     padding-top: 0;
 }
 
-@media (max-width: 1115px) {
-    
-.block-countdown__back-image {
-    /* width: max-content auto; */
-    height: 436px;
+@media (max-width: 800px) {
+
+    .block-countdown__caption__text {
+        font-size: 35px;
+    }
+
+    .block-countdown__caption__desc {
+        font-size: 25px;
+    }
+    .block-countdown__caption__time {
+        max-width: 500px;
+        font-size: 70px;
+    }
+
+    .block-countdown__caption__timer {
+        font-size: 70px;
+    }
+
+    .block-countdown__caption__timer__count p {
+        font-size: 15px;
+        font-weight: 100;
+    }
 }
+
+@media (max-width: 550px) {
+    .block-countdown__caption__time {
+        width: 350px;
+        font-size: 50px;
+    }
+
+    .block-countdown__caption__timer {
+        font-size: 50px;
+    }
+    
+    .block-countdown__caption__timer__count p {
+        margin-top: -50px;
+    }
 }

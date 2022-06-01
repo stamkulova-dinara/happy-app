@@ -28,10 +28,3 @@
     font-size: 16px;
     line-height: 24px;
 }
-
-@media (max-width: 960px) {
-    .block-faq__cards{ 
-        justify-content: center;
-    }
-
-}

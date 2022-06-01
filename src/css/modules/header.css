@@ -14,14 +14,17 @@ nav {
   justify-content: space-between;
   margin-top: 5px;
 }
-
 .header__menu {
-  float: right;
-  margin-top: 0;
-  list-style: none;
+  display: flex;
 }
 
-.header__menu li {
+.header__menu ul{
+  margin-top: 0;
+  list-style: none;
+  padding-top: 12px;
+}
+
+.header__menu ul li {
   margin: 0 21px;
   display: inline-block;
 }
@@ -33,6 +36,7 @@ a {
 
 .header__menu-form__btn {
   width: 172px;
+  margin-left: 20px;
 }
 
 .header__hamburger-menu {
@@ -109,13 +113,18 @@ a {
   list-style: none;
   margin-bottom: 19px;
 }
+.header__hamburger__menu-form__btn {
+  margin-left: 5%;
+  width: 172px;
+}
+
 
 @media (max-width: 970px) {
   .header__hamburger-menu {
     display: block;
   }
 
-  .header__menu {
+  .header__menu,  .header__menu-form__btn {
     display: none;
   }
 }

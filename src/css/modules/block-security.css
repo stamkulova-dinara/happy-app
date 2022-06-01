@@ -3,15 +3,30 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 8% 15% 0 15%;
+    padding: 8% 14% 0 15%;  
 }
 
 .block-security__image {
     width: 376px;
-    position: absolute;
+    margin-bottom: -15px;
 }
 
 .block-security__text {
-    margin: 7% 0 0 60%;
+    margin: 6% 0 0 0 ;
+    font-weight: 100;
+    width: 400px;
+}
+
+@media (max-width: 960px) {
+    .block-security {
+        padding: 4% 5% 0 5%;  
+    }
+}
+
+@media (max-width: 850px) {
+    .block-security {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }

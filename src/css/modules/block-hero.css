@@ -3,7 +3,6 @@
     padding: 6% 14% 7% 10%;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 .block-hero__info{
@@ -11,7 +10,6 @@
     min-width: 200px;
     color:#222222;
     font-weight: 400 Regular;
-    /* padding: 55px 40px 65px 40px; */
     padding: 6% 4%;
 }
 
@@ -37,6 +35,35 @@
 }
 
 @media (max-width: 970px) {
+    .block-hero {
+        padding: 5% 5% 0 5%;
+    }
+    .block-hero__image {
+        margin-right: 5%;
+    }
 
+    .block-hero__info{
+        width: 350px;
+    }
+
+    .block-hero__info img {
+        width: 130px;
+    }
+
+    .block__wrap-title {
+        font-size: 35px;
+        width: 300px;
+    }
+
+    .block-hero__image, .block-hero__image img {
+        width: 330px;
+    }
+}
+
+@media (max-width: 670px) {
+    .block-hero {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
