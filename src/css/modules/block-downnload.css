@@ -1,9 +1,9 @@
 .block-download {
-    padding: 8%;
+    padding: 7% 8% 10% 8%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .block-download__desc {
-    margin: 2% 24% 4% 24% !important;
+    margin: 2% 24% !important;
 }

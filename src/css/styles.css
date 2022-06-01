@@ -53,6 +53,7 @@ body {
     line-height: 20px;
     margin: 0;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .subtitle {
@@ -72,4 +73,5 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
+    max-width: 1440px;
 }

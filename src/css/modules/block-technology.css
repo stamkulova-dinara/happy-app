@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 7% 16% 0 15%;
+    padding: 8% 13% 0 13%;
     color:#222222;
 }
 
 .block-technology__text {
-    padding-top: 5%;
+    padding-top: 8%;
 }
 
 .block-technology__text-title {

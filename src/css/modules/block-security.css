@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 8% 16% 0 16%;
+    padding: 8% 15% 0 15%;
 }
 
 .block-security__image {
@@ -13,5 +13,5 @@
 }
 
 .block-security__text {
-    margin: 4% 0 0 60%;
+    margin: 7% 0 0 60%;
 }

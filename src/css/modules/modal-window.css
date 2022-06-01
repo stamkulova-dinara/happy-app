@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
   opacity: 0;
   transition: 0.3s;
@@ -20,13 +20,14 @@
 .modal__wrapper {
   background-color: #ffffff;
   max-width: 506px;
+  min-width: 375px;
   padding: 2% 0;
   margin: 250px 0 100px 0;
   text-align: center;
   color: #000000;
+  border-radius: 4px;
   font-size: 20px;
   line-height: 30px;
-  /* height: auto; */
 }
 
 .modal__wrapper-header {
@@ -54,7 +55,7 @@
   font-size: 20px;
   line-height: 30px;
   width: 312px;
-  margin: 10px 0 0 60px;
+  margin: 15px 0 10px 60px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -73,8 +74,9 @@
   padding: 7px 17px;
   font-size: 16px;
   line-height: 24px;
-  width: 330px;
-  height: 42px;
+  margin-top: 17px;
+  width: 300px;
+  height: 30px;
 }
 
 .modal-content__form-input input:focus {
@@ -98,7 +100,7 @@
 }
 
 .plan label {
-  width: 305px;
+  width: 300px;
   height: 42px;
   background: #fafafa;
   border-radius: 4px;
@@ -127,13 +129,17 @@
 .error-input {
   background: #FFEEEE !important;
 }
-.error, #email-error, #username-error {
+.checkbox-error, #email-error, #name-error {
   color: #FF5437;
   font-size: 12px;
   line-height: 18px;
 }
-#email-error, #username-error {
-  margin: 4px 220px 5px 0;
+
+#email-error, #name-error {
+  align-items: flex-start;
+  text-align: start;
+  padding: 0 18%;
+  margin-top: 4px;
 }
 
 .lifetime-plan {

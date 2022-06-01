@@ -1,5 +1,6 @@
 .block-pricing {
-    padding: 100px;
+    /* padding: 100px 100px 85px 100px; */
+    padding: 8% 7% 6% 8%;
     color: #222222;
     font-weight: 400;
 }
@@ -12,13 +13,13 @@
 
 .block-pricing__card {
     width: 379px;
-    height: 338px;
+    height: 305px;
     border-radius: 20px;
     background-color: #F2F2F2;
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
-    padding: 50px 0 0 0;
+    padding: 45px 0 0 0;
 }
 
 .block-pricing__card-price {
@@ -53,15 +54,15 @@
 
 .block-pricing__card button {
     width: 129px;
+    margin: 0;
 }
 .block-pricing__card-subtitle {
     margin: 0;
-    
 }
 
 .block-pricing-time {
     color: #222222;
-    margin: 25px 0 20px 0 !important;
+    margin: 15px 0 20px 0 !important;
 }
 
 @media (max-width: 996px){

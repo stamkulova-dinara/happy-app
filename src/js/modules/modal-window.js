@@ -44,10 +44,18 @@ const tarifPlan = (plan) => {
 const form = document.getElementById("form");
 const username = document.getElementById("name");
 const email = document.getElementById("email");
-const nameError = document.querySelector('#username-error')
+const checkbox = document.querySelectorAll("input[class='checkbox']")
+const nameError = document.querySelector('#name-error')
 const emailError = document.querySelector('#email-error')
-const checkboxError = document.querySelector('.error')
+const checkboxError = document.querySelector('.checkbox-error')
 const loading = document.querySelector('.modal-content__form__loading')
+
+let info = {
+  "username": '',
+  "email": '',
+  "choosenPlan": '',
+  "app": {}
+}
 
 function checkEmail(input) {
   const regex =
@@ -55,6 +63,7 @@ function checkEmail(input) {
     if(regex.test(input.value.trim())) {
         emailError.textContent = ''
         email.removeAttribute('class')
+        info.email = input.value
     }else {
       emailError.textContent = 'this field is reqiured*'
       email.setAttribute('class', 'error-input')
@@ -70,27 +79,68 @@ function checkboxCheck() {
   }
 }
 
-function checkUserName(input) {
-  if(input.value.length == 0) {
+const nameErrors = () => {
+  if(!username.value) {
     nameError.textContent = 'this field is reqiured*'
     username.setAttribute('class', 'error-input')
+  } else if (username.value.length < 3) {
+    nameError.textContent = 'length shoulbe be at least 3 characters'
+    username.setAttribute('class', 'error-input')
   } else {
+    info.username = username.value
     nameError.textContent = ''
     username.removeAttribute('class')
   }
 }
 
 function loadingValidate() {
-  if(!nameError.textContent && !emailError.textContent && !checkboxError.textContent) {
+  if(username.value && email.value && !nameError.textContent && !emailError.textContent && !checkboxError.textContent) {
     loading.id = "loading"
-    setInterval(function () { modal.classList.remove("modal-visiblity")}, 2000);
+    loading.setAttribute('id', 'loading')
+    setTimeout(function () { 
+      let checkboxes = document.querySelectorAll("input[class='checkbox']:checked")
+      modal.classList.remove("modal-visiblity")
+      email.value = ''
+      username.value = ''
+      loading.removeAttribute('id')
+      checkboxes.forEach(el => {
+      el.checked = false
+      })
+    }, 2000);
   }
+}
+
+function initOnchange(inputArr) {
+  inputArr.forEach(item => {
+    item.addEventListener('input', () => {
+      if (item.id == 'name') {
+        nameErrors()
+      } else if (item.id == 'email') {
+        checkEmail(email)
+      } 
+    })
+  })
+}
+
+function onChangeCheckbox() {
+  checkbox.forEach(el => {
+    el.addEventListener('input', () => {
+      let checkboxes = document.querySelectorAll("input[class='checkbox']:checked")
+      checkboxCheck()
+      checkboxes.forEach(el => {
+      info.app = el.value 
+      })
+      });
+    })
 }
 
 form.addEventListener('submit',function(e) {
     e.preventDefault();
+    initOnchange([username, email])
     checkEmail(email);
-    checkUserName(username)
+    nameErrors()
+    onChangeCheckbox()
     checkboxCheck();
     loadingValidate();
+    console.log(info);
 });

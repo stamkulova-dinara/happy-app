@@ -1,18 +1,22 @@
 .block-countdown {
+    /* height: 500px; */
     height: 436px;
+    background-image: url('../../images/rectangle.svg');
 }
 
 .block-countdown__back-image {
-    top: 90px;
-    width: 100%;
+    /* top: 76px; */
+    /* width: 100%; */
+    /* width: auto; */
+    width: 1440px;
+    padding-bottom: 50px;
+    /* height: 508px; */
     position: absolute;
 }
 
 .caption {
     font-weight: 700;
-    top: 100px;
-    position: relative;
-    width: 100%;
+    padding-top: 55px;
     align-items: center;
     text-align: center;
     color:#FFFFFF;
@@ -22,7 +26,7 @@
     font-size: 50px;
     line-height: 75px;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .caption__time {
@@ -101,4 +105,12 @@
 .caption__time-text p {
     margin: 0;
     padding-top: 0;
+}
+
+@media (max-width: 1115px) {
+    
+.block-countdown__back-image {
+    /* width: max-content auto; */
+    height: 436px;
+}
 }

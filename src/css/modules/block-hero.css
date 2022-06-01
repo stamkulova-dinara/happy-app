@@ -1,15 +1,18 @@
 .block-hero {
-    padding: 7% 9% 7% 10%;
+    top: 0;
+    padding: 6% 14% 7% 10%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .block-hero__info{
-    width: 400px;
+    max-width: 400px;
+    min-width: 200px;
     color:#222222;
     font-weight: 400 Regular;
-    padding: 45px 60px;
+    /* padding: 55px 40px 65px 40px; */
+    padding: 6% 4%;
 }
 
 .block__wrap-title {
@@ -32,3 +35,8 @@
     width: 379px;
     height: 400px;
 }
+
+@media (max-width: 970px) {
+
+}
+

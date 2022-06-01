@@ -10,33 +10,38 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header__container">
+      <nav>
         <div class="header__container__logo">
           <img src="src/images/Happy-Horizontal-Logotype.svg" alt="logotip" />
         </div>
-        <div class="menu-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-        <nav class="header__menu">
-          <ul>
-            <li class="header__menu__nav-item"><a href="#features">Features</a></li>
-            <li class="header__menu__nav-item"><a href="#pricing">Pricing</a></li>
-            <li class="header__menu__nav-item"><a href="#testimonials">Testimonials</a></li>
-            <li class="header__menu__nav-item"><a href="#faq">FAQ</a></li>
-          </ul>
+        <ul class="header__menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <button class="header__menu-form__btn button">Get this app</button>
-        </nav>
-      </div>
+        </ul>
+
+        <div class="header__hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="header__hamburger-menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <div class="menu__box">
+              <img src="src/images/Happy-Horizontal-Logotype.svg" alt="logotip" />
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          <button class="header__menu-form__btn button">Get this app</button>
+          </div>
+        </div> 
+      </nav>
     </header>
     <!-- block-countdown -->
     <section class="block-countdown" id="block-countdown">
-      <img
-        src="src/images/rectangle.svg"
-        alt="photo"
-        class="block-countdown__back-image"
-      />
       <div class="caption">
         <h1 class="caption__text">big sale on lifetime plan</h1>
         <h2 class="caption__desc">there is very little left</h2>
@@ -316,9 +321,9 @@
         </div>
           <form id="form">
             <div class="modal-content__form">
-              <div class="modal-content__form-input">
+              <div class="modal-content__form-input username">
                 <input type="text" placeholder="name" id="name">
-                <p id="username-error"></p>
+                <p id="name-error"></p>
               </div>
               <div class="modal-content__form-input">
                 <input type="email" placeholder="email" id="email">
@@ -361,7 +366,7 @@
                     <input type="checkbox" value="Other" class="checkbox">
                     <span>Other</span>
                 </label>
-                <div class="error"></div>
+                <div class="checkbox-error"></div>
             </div>
             <button class="button send-btn" type="submit">send</button>
             <div class="modal-content__form__loading">
@@ -380,19 +385,19 @@
       </div>
       <div class="cards">
         <div class="block-testimonial__card">
-          <p class="block-testimonial__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p>
-          <p class="block-testimonial__card-author">Pam Beesly</p>
-          <p class="block-testimonial__card-workplace">Top Manager Happy Co</p>
+          <p class="block-testimonial__card-text"></p>
+          <p class="block-testimonial__card-author"></p>
+          <p class="block-testimonial__card-workplace"></p>
         </div>
         <div class="block-testimonial__card">
-          <p class="block-testimonial__card-text">Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam. Aenean porta neque eget consequat fringilla.</p>
-          <p class="block-testimonial__card-author">Max Henry"</p>
-          <p class="block-testimonial__card-workplace">Top Manager Happy Co</p>
+          <p class="block-testimonial__card-text"></p>
+          <p class="block-testimonial__card-author"></p>
+          <p class="block-testimonial__card-workplace"></p>
         </div>
         <div class="block-testimonial__card">
-          <p class="block-testimonial__card-text">Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus.</p>
-          <p class="block-testimonial__card-author">Ann Schrute"</p>
-          <p class="block-testimonial__card-workplace">CEO and CoFounder</p>
+          <p class="block-testimonial__card-text"></p>
+          <p class="block-testimonial__card-author"></p>
+          <p class="block-testimonial__card-workplace"></p>
         </div>
       </div>
     </section>
@@ -410,7 +415,7 @@
     </section>
     <!-- block-faq -->
     <section class="block-faq" id="faq">
-      <div class="block-faq__title">FAQ</div>
+      <h1 class="block-faq__title">FAQ</h1>
       <p>Some questions & some answers</p>
       <div class="block-faq__cards">
         <div class="block-faq__card">
@@ -465,7 +470,6 @@
     <script type="module" src="src/js/modules/plans.js"></script>
     <script type="module" src="src/js/modules/get-countdown.js"></script>
     <script src="src/js/modules/dark-light-mode.js"></script>
-    <script src="src/js/burger-menu.js"></script>
-    <!-- <script type="module" src="src/js/script.js"></script> -->
+    <script type="module" src="src/js/modules/testimonials.js"></script>
   </body>
 </html>

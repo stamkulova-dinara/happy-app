@@ -1,6 +1,6 @@
 .block-faq {
     background-color: #E5E5E5;
-    padding: 8%;
+    padding: 5% 7% 6% 7%;
     color: #222222;
     font-weight: 400;
 }
@@ -8,6 +8,7 @@
 .block-faq__title {
     font-size: 32px;
     line-height: 36px;
+    font-weight: 100;
 }
 
 .block-faq__cards{ 

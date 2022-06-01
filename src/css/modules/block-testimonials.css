@@ -1,10 +1,11 @@
 .block-testimonials {
     background-color: #F2F2F2;
-    padding: 8%;
+    padding: 7% 8%;
+    /* max-width: 1440px; */
 }
 
 .block-testimonial__card {
-    width: 375px;
+    width: 370px;
     height: 224px;
     border-radius: 20px;
     background-color: #FFFFFF;
