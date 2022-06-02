@@ -57,10 +57,11 @@
 
     .block-hero__image, .block-hero__image img {
         width: 330px;
+        margin-right: 50px;
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 685px) {
     .block-hero {
         justify-content: center;
         flex-wrap: wrap;
