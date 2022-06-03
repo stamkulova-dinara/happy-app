@@ -44,6 +44,7 @@
 
     .block-hero__info{
         width: 350px;
+        padding: 0;
     }
 
     .block-hero__info img {

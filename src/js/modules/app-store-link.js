@@ -1,5 +1,7 @@
 export const renderLink = (link) => {
-    const button = document.querySelector('.header__menu-form__btn')
+    const button = document.querySelectorAll('.header__menu-form__btn')
     const openWIndow = () => window.open(link)
-    button.addEventListener('click', openWIndow)
+    button.forEach(e => {
+        e.addEventListener('click', openWIndow)
+    })
 }

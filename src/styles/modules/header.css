@@ -124,7 +124,7 @@ a {
     display: block;
   }
 
-  .header__menu,  .header__menu-form__btn {
+  .header__menu,  .header__menu .header__menu-form__btn {
     display: none;
   }
 }

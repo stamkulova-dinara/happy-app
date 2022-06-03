@@ -25,8 +25,9 @@
 }
 
 .block-countdown__caption__time {
-    width: 729px;
-    margin: 0 auto;
+    width: 100;
+    padding: 0 22%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -88,7 +89,6 @@
 }
 
 @media (max-width: 800px) {
-
     .block-countdown__caption__text {
         font-size: 35px;
     }
@@ -97,7 +97,7 @@
         font-size: 25px;
     }
     .block-countdown__caption__time {
-        max-width: 500px;
+        padding: 0 5%;
         font-size: 70px;
     }
 
@@ -113,15 +113,22 @@
 
 @media (max-width: 550px) {
     .block-countdown__caption__time {
-        width: 350px;
-        font-size: 50px;
+        /* width: 320px; */
+        font-size: 35px;
+        padding: 0 2%;
+        margin: 0;
+        /* margin: 0;
+        align-items: center;
+        line-height: 5px;
+        text-align: center; */
     }
 
     .block-countdown__caption__timer {
-        font-size: 50px;
+        font-size: 40px;
     }
     
     .block-countdown__caption__timer__count p {
         margin-top: -50px;
+        font-size: 13px;
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Happy application</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
     <header class="header">
       <nav>
         <div class="header__container__logo">
-          <img src="src/assets/icons/Happy-Horizontal-Logotype.svg" alt="logotip" />
+          <img src="./assets/icons/Happy-Horizontal-Logotype.svg" alt="logotip" />
         </div>
         <div class="header__menu">
           <ul>
@@ -30,14 +30,14 @@
             <span></span>
           </label>
           <div class="menu__box">
-              <img src="src/assets/icons/Happy-Horizontal-Logotype.svg" alt="logotip" />
+              <img src="./assets/icons/Happy-Horizontal-Logotype.svg" alt="logotip" />
             <ul>
               <li><a href="#features">Features</a></li>
               <li><a href="#pricing">Pricing</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
-          <button class="header__hamburger__menu-form__btn button">Get this app</button>
+          <button class="header__menu-form__btn button">Get this app</button>
           </div>
         </div> 
       </nav>
@@ -73,17 +73,17 @@
     <!-- block-hero -->
     <section class="block-hero">
         <div class="block-hero__info">
-          <img src="src/assets/icons/happy-logotip.svg" alt="logotip" />
+          <img src="./assets/icons/happy-logotip.svg" alt="logotip" />
           <h2 class="block__wrap-title">The future of digital photos.</h2>
           <p class="block-hero__info-desc">
             The H(app)y app is the latest & greatest in phone photography. It's
             available in the App Store right now. Go check it out!
           </p>
-          <button class="block-hero__info-btn button" onclick="tarifPlan('lifetimes')">buy now</button>
+          <button class="block-hero__info-btn button" id="hero-btn">buy now</button>
           <button class="block-hero__info-btn button">Read more</button>
         </div>
         <div class="block-hero__image">
-          <img src="src/assets/images/phone-4.png" alt="phone" class="image" />
+          <img src="./assets/images/phone-4.png" alt="phone" class="image" />
         </div>
     </section>
     <!-- block-features -->
@@ -96,10 +96,10 @@
       </div>
       <div class="block-features__cards">
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-1.png" alt="card-image"/>
+          <img class="block-features__card-image" src="./assets/images/phone-1.png" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/calendar-view.svg"
+              src="./assets/icons/calendar-view.svg"
               alt="calendar-view"
               class="block-features-card-icon"
             />
@@ -111,10 +111,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-2.png" alt="card-image"/>
+          <img class="block-features__card-image" src="./assets/images/phone-2.png" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/list.svg"
+              src="./assets/icons/list.svg"
               alt="list"
               class="block-features-card-icon"
             />
@@ -126,10 +126,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-3.png" alt="card-image"/>
+          <img class="block-features__card-image" src="./assets/images/phone-3.png" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/varied-type.svg"
+              src="./assets/icons/varied-type.svg"
               alt="varied-type"
               class="block-features-card-icon"
             />
@@ -141,10 +141,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-4.png" alt="card-image"/>
+          <img class="block-features__card-image" src="./assets/images/phone-4.png" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/split-screen.svg"
+              src="./assets/icons/split-screen.svg"
               alt="split-screen"
               class="block-features-card-icon"
             />
@@ -158,10 +158,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-5.png" alt="card-image" />
+          <img class="block-features__card-image" src="./assets/images/phone-5.png" alt="card-image" />
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/uploads.svg"
+              src="./assets/icons/uploads.svg"
               alt="uploads"
               class="block-features-card-icon"
             />
@@ -173,10 +173,10 @@
           </div>
         </div>
         <div class="block-features__card">
-          <img class="block-features__card-image" src="src/assets/images/phone-6.png" alt="card-image"/>
+          <img class="block-features__card-image" src="./assets/images/phone-6.png" alt="card-image"/>
           <div class="block-features__card-text">
             <img
-              src="src/assets/icons/focus-mode.svg"
+              src="./assets/icons/focus-mode.svg"
               alt="focus-mode"
               class="block-features-card-icon"
             />
@@ -221,7 +221,7 @@
       </div>
       <div class="block-technology__wrap-image">
         <img
-        src="src/assets/images/technology-page.png"
+        src="./assets/images/technology-page.png"
         alt="phone-4"
         class="block-technology__text-image image"
       />
@@ -231,7 +231,7 @@
     <section class="block-security">
       <div class="block-security__wrap-image">
         <img
-        src="src/assets/images/security-page.png"
+        src="./assets/images/security-page.png"
         alt="photo"
         class="block-security__image"
       />
@@ -263,7 +263,7 @@
         </p>
       </div>
         <img
-          src="src/assets/images/dark-mode-page.png"
+          src="./assets/images/dark-mode-page.png"
           class="block-darkmode__wrap-image"
           alt="dark-mode"
         />
@@ -298,19 +298,19 @@
           <p class="block-pricing__card-subtitle standart"></p>
           <p class="block-pricing__card-price standart-price"></p>
           <p class="block-pricing-time title">Monthly</p>
-          <button class="button" id="standart" onclick="tarifPlan('standards')">buy now</button>
+          <button class="button" id="standart">buy now</button>
         </div>
         <div class="block-pricing__card premium-plans">
           <p class="block-pricing__card-subtitle premium"></p>
           <p class="block-pricing__card-price premium-price"></p>
           <p class="block-pricing-time title">Annually</p>
-          <button class="button" id="premium" onclick="tarifPlan('premiums')">buy now</button>
+          <button class="button" id="premium">buy now</button>
         </div>
         <div class="block-pricing__card lifetime-plans">
           <p class="block-pricing__card-subtitle lifetime"></p>
           <p class="block-pricing__card-price lifetime-price"></p>
           <p class="block-pricing-time title">up front</p>
-          <button class="button trigger" id="lifetime" onclick="tarifPlan('lifetimes')">buy now</button>
+          <button class="button trigger" id="lifetime">buy now</button>
         </div>
       </div>
     </section>
@@ -319,7 +319,7 @@
       <div class="modal__wrapper">
         <div class="modal__wrapper-header">
           <h4>Leave a request for the purchase of goods</h4>
-          <button class="modal__wrapper__close"><img src="src/assets/icons/close-modal-window.svg" alt="close-image"/></button>
+          <button class="modal__wrapper__close"><img src="./assets/icons/close-modal-window.svg" alt="close-image"/></button>
         </div>
           <form id="form">
             <div class="modal-content__form">
@@ -335,17 +335,17 @@
               <p>Your plan?</p>
               <div class="plan">
                   <label id="standards" class="standard-plan">
-                    <img src="src/assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
+                    <img src="./assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
                       <input name="plan" type="radio" value="standart">
                       Standart
                   </label>
                   <label id="premiums" class="premium-plan">
-                    <img src="src/assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
+                    <img src="./assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
                       <input name="plan" type="radio" value="premium">
                       Premium
                   </label>
                   <label id="lifetimes" class="lifetime-plan">
-                    <img src="src/assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
+                    <img src="./assets/icons/check-mark.svg" alt="check-mark" class="check-mark"/>
                       <input name="plan" type="radio" value="lifetime">
                       Lifetime
                   </label>
@@ -372,7 +372,7 @@
             </div>
             <button class="button send-btn" type="submit">send</button>
             <div class="modal-content__form__loading">
-              <img src="src/assets/icons/loading.svg" class="modal-content__form__loading__img" alt="loading-image"/>
+              <img src="./assets/icons/loading.svg" class="modal-content__form__loading__img" alt="loading-image"/>
               <span>loading...</span>
             </div>
           </form>
@@ -412,7 +412,7 @@
           Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in
           convallis risus egestas non.
         </p>
-        <img src="src/assets/icons/download.svg" alt="download"/>
+        <img src="./assets/icons/download.svg" alt="download"/>
       </div>
     </section>
     <!-- block-faq -->
@@ -460,14 +460,13 @@
       </div>
     </section>
     <footer>
-        <img src="src/assets/icons/Happy-Vertical-Logotype.svg" alt="logotype"/>
+        <img src="./assets/icons/Happy-Vertical-Logotype.svg" alt="logotype"/>
         <div class="footer-social" id="time-left">
-            <img src="src/assets/icons/twitter.svg" class="footer-social__icon" alt="twitter"/>
-            <img src="src/assets/icons/instagram.svg" alt="instagram" class="footer-social__icon">
-            <img src="src/assets/icons/facebook.svg" alt="facebook"/>
+            <img src="./assets/icons/twitter.svg" class="footer-social__icon" alt="twitter"/>
+            <img src="./assets/icons/instagram.svg" alt="instagram" class="footer-social__icon">
+            <img src="./assets/icons/facebook.svg" alt="facebook"/>
         </div>
     </footer>
-    <script type="module" src="src/js/script.js"></script>
-    <script src="src/js/modules/modal-window.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
