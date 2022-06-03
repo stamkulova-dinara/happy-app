@@ -20,7 +20,7 @@
 .modal__wrapper {
   background-color: #ffffff;
   max-width: 506px;
-  min-width: 375px;
+  min-width: 320px;
   padding: 2% 0;
   margin: 250px 0 100px 0;
   text-align: center;
@@ -261,12 +261,18 @@
 
 @media (max-width: 550px) {
   .modal__wrapper {
-    width: 350px;
+    width: 320px;
   }
   .modal-content__form-input {
     width: 380px;
   }
   #email-error, #name-error {
     padding: 0 8%;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal__wrapper {
+    width: 320px;
   }
 }

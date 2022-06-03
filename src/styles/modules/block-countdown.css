@@ -22,6 +22,7 @@
     line-height: 75px;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 1.1px
 }
 
 .block-countdown__caption__time {
@@ -113,14 +114,9 @@
 
 @media (max-width: 550px) {
     .block-countdown__caption__time {
-        /* width: 320px; */
         font-size: 35px;
         padding: 0 2%;
         margin: 0;
-        /* margin: 0;
-        align-items: center;
-        line-height: 5px;
-        text-align: center; */
     }
 
     .block-countdown__caption__timer {

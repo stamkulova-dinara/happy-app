@@ -27,6 +27,17 @@
     .block-security {
         flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     
+}
+
+@media (max-width: 550px) {
+    .block-security__text {
+        width: 320px;
+    }
+    .block-security__image {
+        width: 320px;
+    }
 }

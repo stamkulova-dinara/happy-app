@@ -1,6 +1,6 @@
 .block-hero {
     top: 0;
-    padding: 6% 14% 7% 10%;
+    padding: 6% 14% 0 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -28,12 +28,6 @@
 .block-hero__info-btn {
     width: 148px;
 }
-
-.block-hero__image {
-    width: 379px;
-    height: 400px;
-}
-
 @media (max-width: 970px) {
     .block-hero {
         padding: 5% 5% 0 5%;
@@ -67,5 +61,13 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+   .block-hero__image img {
+        width: 330px;
+        margin-right: 50px;
+    }
+
+
 }
+
+
 
